@@ -1,3 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SmartAttendanceApp</string>
+    <!-- App Name -->
+    <string name="app_name">Smart Attendance</string>
+
+    <!-- Login Screen -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+
+    <!-- Register Screen -->
+    <string name="create_account">Create Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="department">Department</string>
+    <string name="registration_number">Registration Number</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="select_role">Select Role</string>
+
+    <!-- Dashboard -->
+    <string name="teacher_dashboard">Teacher Dashboard</string>
+    <string name="student_dashboard">Student Dashboard</string>
+
+    <!-- Common -->
+    <string name="back">Back</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="submit">Submit</string>
+    <string name="logout">Logout</string>
+
+    <!-- Messages -->
+    <string name="loading">Loading…</string>
+    <string name="success">Success</string>
+    <string name="error">Error</string>
+
 </resources>
