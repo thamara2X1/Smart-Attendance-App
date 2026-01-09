@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.vtp.smartattendanceapp.databinding.ActivityStudentDashboardBinding
+import androidx.appcompat.app.AlertDialog
 
 class StudentDashboardActivity : AppCompatActivity() {
 
@@ -76,8 +77,8 @@ class StudentDashboardActivity : AppCompatActivity() {
 
         // Profile
         binding.cardProfile.setOnClickListener {
-            Toast.makeText(this, "Profile - Coming Soon!", Toast.LENGTH_SHORT).show()
-            // TODO: Navigate to Profile Activity
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
         }
 
         // Logout
@@ -87,7 +88,7 @@ class StudentDashboardActivity : AppCompatActivity() {
     }
 
     private fun showLogoutDialog() {
-        android.app.AlertDialog.Builder(this)
+        AlertDialog.Builder(this)
             .setTitle("Logout")
             .setMessage("Are you sure you want to logout?")
             .setPositiveButton("Yes") { _, _ ->
