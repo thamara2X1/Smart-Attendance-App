@@ -25,7 +25,14 @@
         <activity android:name=".RegisterActivity" android:exported="false" />
         <activity android:name=".TeacherDashboardActivity" android:exported="false" />
         <activity android:name=".StudentDashboardActivity" android:exported="false" />
-
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SmartAttendance.NoActionBar" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SmartAttendance.NoActionBar" />
 <!--        <activity-->
 <!--            android:name=".MainActivity"-->
 <!--            android:exported="true">-->
