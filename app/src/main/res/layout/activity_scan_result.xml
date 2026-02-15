@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/ivResultIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_badge"
+        android:contentDescription="Result icon"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tvResultTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendance Marked!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/success"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvResultMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details will appear here"
+        android:textSize="16sp"
+        android:textColor="@color/text_secondary"
+        android:textAlignment="center"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="40dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDone"
+        android:layout_width="200dp"
+        android:layout_height="56dp"
+        android:text="Done"
+        android:textSize="16sp" />
+
+</LinearLayout>
