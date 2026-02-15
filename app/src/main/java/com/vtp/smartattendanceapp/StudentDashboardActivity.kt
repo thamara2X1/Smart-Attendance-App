@@ -8,6 +8,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.vtp.smartattendanceapp.databinding.ActivityStudentDashboardBinding
 import androidx.appcompat.app.AlertDialog
+import android.text.TextUtils
 
 class StudentDashboardActivity : AppCompatActivity() {
 
@@ -65,8 +66,8 @@ class StudentDashboardActivity : AppCompatActivity() {
     private fun setupClickListeners() {
         // Scan QR Code
         binding.cardScanQR.setOnClickListener {
-            Toast.makeText(this, "QR Scanner - Coming Soon!", Toast.LENGTH_SHORT).show()
-            // TODO: Navigate to QR Scanner Activity
+            val intent = Intent(this, QRScannerActivity::class.java)
+            startActivity(intent)
         }
 
         // Attendance History
